@@ -1,0 +1,9 @@
+.title{
+    color: red;
+}
+.pink{
+color: pink;
+}
+.blue{
+color: blue;
+}

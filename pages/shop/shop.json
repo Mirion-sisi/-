@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "now-sell":"/components/now-sell/now-sell"
+  },
+  "navigationBarTitleText": "商品"
+}

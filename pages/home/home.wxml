@@ -1,0 +1,217 @@
+<view class="page_wrap">
+    <!-- 1、top区域 -->
+    <view class="home_top">
+        <!-- 定位 -->
+        <view class="address">
+            <image class="tou" src="../../images/tou.jpeg"    mode="widthFix"></image>
+            <text class="add_info">嘉兴路</text>
+            <image class="down" src="../../icons/down.png" mode="widthFix"></image>
+        </view>
+        <!-- 搜索框 -->
+        <view class="search">
+            <icon class="" type="search" size="18" color=""></icon>
+            <view class="tex">搜索商品</view>
+        </view>
+    </view>
+    <!-- 2、轮播图区域 -->
+    <view class="swiper_wrap">
+        <swiper indicator-dots autoplay circular>
+            <swiper-item class="" item-id="">
+                <image class="" src="../../images/dy1.jpg" mode="widthFix"></image>
+            </swiper-item>
+            <swiper-item class="" item-id="">
+                <image class="" src="../../images/dy2.jpg" mode="widthFix"></image>
+            </swiper-item>
+            <swiper-item class="" item-id="">
+                <image class="" src="../../images/dy3.jpg" mode="widthFix"></image>
+            </swiper-item>
+            <swiper-item class="" item-id="">
+                <image class="" src="../../images/dy4.jpeg" mode="widthFix"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 3、商品分类区域 -->
+    <view class="sort_wrap">
+        <view class="sort_item">
+            <image class="" src="../../images/f02.jpg" mode="widthFix"></image>
+            <view class="sort_text">松鼠到家</view>
+        </view>
+        <view class="sort_item">
+            <image class="" src="../../images/f03.jpg" mode="widthFix"></image>
+            <view class="sort_text">松鼠到家</view>
+        </view>
+        <view class="sort_item">
+            <image class="" src="../../images/f04.jpg" mode="widthFix"></image>
+            <view class="sort_text">松鼠到家</view>
+        </view>
+        <view class="sort_item">
+            <image class="" src="../../images/f02.jpg" mode="widthFix"></image>
+            <view class="sort_text">松鼠到家</view>
+        </view>
+        <view class="sort_item">
+            <image class="" src="../../images/f03.jpg" mode="widthFix"></image>
+            <view class="sort_text">松鼠到家</view>
+        </view>
+        <view class="sort_item">
+            <image class="" src="../../images/f04.jpg" mode="widthFix"></image>
+            <view class="sort_text">松鼠到家</view>
+        </view>
+        <view class="sort_item">
+            <image class="" src="../../images/f01.jpg" mode="widthFix"></image>
+            <view class="sort_text">松鼠到家</view>
+        </view>
+        <view class="sort_item">
+            <image class="" src="../../images/f02.jpg" mode="widthFix"></image>
+            <view class="sort_text">松鼠到家</view>
+        </view>
+        <view class="sort_item">
+            <image class="" src="../../images/f03.jpg" mode="widthFix"></image>
+            <view class="sort_text">松鼠到家</view>
+        </view>
+        <view class="sort_item">
+            <image class="" src="../../images/f02.jpg" mode="widthFix"></image>
+            <view class="sort_text">松鼠到家</view>
+        </view>
+    </view>
+    <!-- 4、秒杀两栏布局区域 -->
+    <view class="Seckill_wrap">
+        <!-- 左边区域 -->
+        <view class="Seckill_left">
+            <image class="" src="../../images/kill01.jpg"></image>
+        </view>
+        <!-- 右边区域 -->
+        <view class="Seckill_right">
+            <!-- 右边区域的top部分 -->
+            <view class="right_top">
+                <image class="" src="../../images/kill02.jpg"></image>
+            </view>
+            <!-- 右边区域的bottom部分 -->
+            <view class="right_bottom">
+                <image class="" src="../../images/kill03.jpg"></image>
+            </view>
+        </view>
+    </view>
+    <!-- 5、猜你喜欢区域 -->
+    <view class="favor_wrap">
+        <!-- 左边文字区域 -->
+        <view class="favor_left">猜你喜欢</view>
+        <!-- 右边开闭按钮区域 -->
+        <view class="favor_right">
+            <view class="btn {{currentSelectBtn=='now'?'active':''}}" bindtap="bindNow" data-id="now">
+                正在抢购
+            </view>
+            <view class="btn {{currentSelectBtn=='next'?'active':''}}" bindtap="bindNext" data-id="next">
+                即将开始
+            </view>
+        </view>
+    </view>
+    <!-- 6、商品列表区域 -->
+    <!-- 6.1、正在抢购__商品列表 -->
+    <view class="list_wrap {{currentSelectBtn=='now'?'':'hidden'}}">
+        <view class="list_item">
+            <!-- 左边图片区域 -->
+            <view class="item_left">
+                <image class="" src="../../images/f02.jpg"></image>
+            </view>
+            <!-- 右边详情区域 -->
+            <view class="item_right">
+                <!-- 右边顶top部区域 -->
+                <view class="item_right_top">
+                    <view class="item_title">【直邮】六鳌红蜜薯【中果2.5kg (20-30跟)/箱】</view>
+                    <view class="item_desc">美味粗粮，口感粉糯香甜</view>
+                    <view class="item_express">快递</view>
+                </view>
+                <!-- 右边 bottom 区域 -->
+                <view class="item_right_bottom">
+                    <view class="now_price_specs">
+                        <view class="now_price">￥21.90</view>
+                        <view class="specs">选规格</view>
+                    </view>
+                    <view class="old_price_count">
+                        <view class="old_price_wrap">
+                            <view class="old_price_text">市场价</view>
+                            <view class="old_price">￥29.90</view>
+                        </view>
+                        <view class="count">剩10件/售2366</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="list_item">
+            <!-- 左边图片区域 -->
+            <view class="item_left">
+                <image class="" src="../../images/f03.jpg"></image>
+            </view>
+            <!-- 右边详情区域 -->
+            <view class="item_right">
+                <!-- 右边顶top部区域 -->
+                <view class="item_right_top">
+                    <view class="item_title">【直邮】六鳌红蜜薯【中果2.5kg (20-30跟)/箱】</view>
+                    <view class="item_desc">美味粗粮，口感粉糯香甜</view>
+                    <view class="item_express">快递</view>
+                </view>
+                <!-- 右边 bottom 区域 -->
+                <view class="item_right_bottom">
+                    <view class="now_price_specs">
+                        <view class="now_price">￥21.90</view>
+                        <view class="specs">选规格</view>
+                    </view>
+                    <view class="old_price_count">
+                        <view class="old_price_wrap">
+                            <view class="old_price_text">市场价</view>
+                            <view class="old_price">￥29.90</view>
+                        </view>
+                        <view class="count">剩10件/售2366</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="list_item">
+            <!-- 左边图片区域 -->
+            <view class="item_left">
+                <image class="" src="../../images/f01.jpg"></image>
+            </view>
+            <!-- 右边详情区域 -->
+            <view class="item_right">
+                <!-- 右边顶top部区域 -->
+                <view class="item_right_top">
+                    <view class="item_title">【直邮】六鳌红蜜薯【中果2.5kg (20-30跟)/箱】</view>
+                    <view class="item_desc">美味粗粮，口感粉糯香甜</view>
+                    <view class="item_express">快递</view>
+                </view>
+                <!-- 右边 bottom 区域 -->
+                <view class="item_right_bottom">
+                    <view class="now_price_specs">
+                        <view class="now_price">￥21.90</view>
+                        <view class="specs">选规格</view>
+                    </view>
+                    <view class="old_price_count">
+                        <view class="old_price_wrap">
+                            <view class="old_price_text">市场价</view>
+                            <view class="old_price">￥29.90</view>
+                        </view>
+                        <view class="count">剩10件/售2366</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 6.2、即将开始__商品列表 -->
+    <view class="list_next_wrap {{currentSelectBtn=='next'?'':'hidden'}}">
+        <!-- 当商品列表没有商品时 -->
+        <view class="list_none">
+            <view class="none_top">
+                <view class="top_imgs">
+                    <image class="" src="../../images/f04.jpg"></image>
+                </view>
+                <view class="middle_txt">暂时没有团购</view>
+                <view class="bottom_txt">我们正在为您准备更优惠的团购</view>
+            </view>
+            <view class="none_bottom">
+                拼出美好生活!
+            </view>
+        </view>
+        <!-- 商品列表有商品时 -->
+        <!-- <view class="list_next_item"></view> -->
+    </view>
+</view>

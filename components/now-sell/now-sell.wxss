@@ -1,0 +1,10 @@
+.wrap{
+    /* color: red; */
+    
+}
+.titleclass{
+    color: red;
+}
+.title{
+    font-weight: 800;
+}

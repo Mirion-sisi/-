@@ -1,0 +1,6 @@
+<view class="wrap titleclass">
+    子组件
+</view>
+<view class="title">
+   {{title}} 
+</view>

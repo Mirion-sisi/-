@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/shop/shop",
+    "pages/home/home",
+    "pages/shopCar/shopCar",
+    "pages/my/my",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小尧商城",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color":"#708090",
+    "selectedColor":"#DC143C",
+    "borderStyle":"white",
+    "list": [
+      {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "icons/home.png", 
+      "selectedIconPath": "icons/home.png"
+      },
+      {
+      "pagePath": "pages/shop/shop",
+      "text": "分类",
+      "iconPath": "icons/shopping.png",
+      "selectedIconPath": "icons/shopping.png"
+      },
+      {
+      "pagePath": "pages/shopCar/shopCar",
+      "text": "购物车",
+      "iconPath": "icons/cart.png",
+      "selectedIconPath": "icons/cart.png"
+      },
+      {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "icons/person2.png",
+      "selectedIconPath": "icons/person2.png"
+      }
+  ]
+  }
+}

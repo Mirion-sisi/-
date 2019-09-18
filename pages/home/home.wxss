@@ -1,0 +1,383 @@
+/* 全局样式 */
+.page_wrap{
+padding: 0 10rpx;
+}
+/* 1、 top区域 */
+.home_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    height: 90rpx;
+    /* width: 100%; */
+    /* padding:0 10rpx; */
+}
+/* top区域  定位部分 */
+.home_top .address{
+    display: flex;
+    align-items: center;
+}
+.home_top .address .tou{
+    width: 80rpx;
+    border-radius: 50%;
+}
+.home_top .address .add_info{
+    font-weight: 530;
+    font-size: 40rpx;
+    padding: 0 20rpx;
+    /* background-color: #fff; */
+}
+.home_top .address .down{
+    width: 40rpx;
+    padding-top: 10rpx;
+}
+
+/* top区域   搜索框部分 */
+.home_top .search{
+    width: 260rpx;
+    height: 70%;
+    background-color:#E6E6FA;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 40rpx;
+}
+.home_top .search .tex{
+    /* background-color: #fff; */
+    /* padding: 0 5rpx; */
+    font-size: 30rpx;
+    margin-right: 70rpx;
+  
+   
+
+  
+}
+
+/* 2、 轮播图区域 */
+.swiper_wrap{
+    height: 163rpx;
+}
+.swiper_wrap swiper{
+    width: 100%;
+    height: 100%;
+}
+.swiper_wrap image{
+    width: 100%;
+    height: 100%;
+}
+/* 轮播图底部指示点 */
+.swiper_wrap .wx-swiper-dot{
+   width: 15rpx;
+   height: 15rpx;
+   background-color: #e5e5e5;
+}
+/* 指示点选中时的样式 */
+.swiper_wrap .wx-swiper-dot-active{
+    width: 20rpx;
+    height: 10rpx;
+    border-radius: 0; 
+    background-color:rgba(240,0,0,0.8);    
+}
+
+/* 3、商品分类区域 */
+.sort_wrap{
+    display: flex;
+    /* width: 100%; */
+    flex-wrap: wrap;
+    padding: 10rpx 0;
+    justify-content: space-around;
+    
+}
+.sort_wrap .sort_item{
+    /* background-color: pink; */
+    width: 15%;
+    /* height: 150rpx; */
+    display: flex;
+    flex-direction: column;
+    margin: 10rpx 10rpx;
+    justify-content:space-between;
+}
+.sort_wrap .sort_item image{
+    width: 100%;
+    border-radius: 45rpx;
+    /* background-color: green; */
+}
+.sort_wrap .sort_item .sort_text{
+    display: flex;
+    justify-content: center;
+    font-size: 26rpx;
+    padding-top: 5rpx;
+}
+
+/* 4、秒杀区域 */
+.Seckill_wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 250rpx;
+    /* background-color: pink; */
+}
+.Seckill_wrap .Seckill_left{
+width: 49%;
+height: 100%;
+/* background-color: red; */
+}
+.Seckill_wrap .Seckill_left image{
+    width: 100%;
+    height: 100%;
+    border-radius: 25rpx;
+}
+.Seckill_wrap .Seckill_right{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.Seckill_wrap .Seckill_right .right_top{
+width: 100%;
+height: 48%;
+}
+.Seckill_wrap .Seckill_right .right_top image{
+    width: 100%;
+    height: 100%;
+    border-radius: 15rpx;
+}
+.Seckill_wrap .Seckill_right .right_bottom{
+    width: 100%;
+height: 48%;
+}
+.Seckill_wrap .Seckill_right .right_bottom image{
+    width: 100%;
+    height: 100%;
+    border-radius: 15rpx;
+}
+
+/* 5、猜你喜欢区域 */
+.favor_wrap{
+    height: 100rpx;
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.favor_wrap .favor_left{
+    /* background-color: green; */
+    width: 30%;
+    display: flex;
+    align-items: center;
+    font-size: 45rpx;
+    font-weight: 600;
+}
+.favor_wrap .favor_right{
+    height: 65%;
+    width: 40%;
+    border-radius: 40rpx;
+    background-color: #dfdfdf;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30rpx;
+    font-weight: 600;
+    align-items: center;
+}
+.favor_wrap .favor_right .btn{
+    color: #ccc;
+    width: 50%;
+    height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+ 
+}
+.favor_wrap .favor_right .btn.active{
+    background-color: #DC143C;
+    color: #fff;
+    border-radius: 40rpx;
+    transition: color .5s;
+}
+
+/* 6、正在抢购----商品列表 */
+.list_wrap{
+    width: 100%;  
+    /* box-shadow: 2rpx -8rpx 2rpx -2rpx #ccc; */
+    box-sizing: border-box;
+    padding: 5rpx;
+   
+}
+.list_wrap.hidden{
+display: none;
+}
+.list_wrap .list_item{
+    display: flex;
+    box-sizing: border-box;
+    padding: 5rpx;
+    width: 100%;
+    height: 270rpx;  
+    background-color: #fff;
+    border-bottom: 1rpx solid #ccc;
+}
+
+/* 商品列表左边图片部分 */
+.list_wrap .list_item .item_left{
+    width: 40%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.list_wrap .list_item .item_left image{
+    width: 100%;
+    height: 100%;
+}
+/* 商品列表右边部分 */
+.list_wrap .list_item .item_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    box-sizing: border-box;
+    padding: 5rpx;
+    width: 60%;
+    height: 100%;
+    /* background-color:#ccc; */
+}
+.list_wrap .list_item .item_right .item_right_top{
+    height: 50%;
+    width: 100%;
+    /* background-color: pink; */
+}
+.list_wrap .list_item .item_right .item_title{
+    height: 45%;
+    /* background-color: #fff; */
+    box-sizing: border-box;
+    padding-top: 5rpx;
+    font-size: 36rpx;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+    
+}
+.list_wrap .list_item .item_right .item_desc{
+    font-size: 28rpx;
+    color:#A9A9A9;
+}
+.list_wrap .list_item .item_right .item_express{
+    width: 13%;
+    font-size: 20rpx;
+    color:#4169E1;
+    border-radius: 35%;
+    border: 0.1rpx solid #4169E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list_wrap .list_item .item_right .item_right_bottom{
+    height: 40%;
+    width: 100%;
+    /* background-color: green; */
+}
+.list_wrap .list_item .item_right .item_right_bottom .now_price_specs{
+    height: 60%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+}
+.list_wrap .list_item .item_right .item_right_bottom .now_price_specs .now_price{
+    color: red;
+    font-size:45rpx;
+}
+.list_wrap .list_item .item_right .item_right_bottom .now_price_specs .now_price::first-letter{
+    font-size: 35rpx;
+}
+.list_wrap .list_item .item_right .item_right_bottom .now_price_specs .specs{
+    width: 30%;
+    height: 100%;
+    border-radius: 30rpx;
+    font-size: 33rpx;
+    /* background-color:red;#ff5000 #ff9000*/
+    background-image: linear-gradient(to right,#ff5000 0,red 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.list_wrap .list_item .item_right .item_right_bottom .old_price_count{
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25rpx;
+    color:#ccc;
+
+}
+.list_wrap .list_item .item_right .item_right_bottom .old_price_count .old_price_wrap{
+    display: flex;
+
+}
+.list_wrap .list_item .item_right .item_right_bottom .old_price_count .old_price_wrap .old_price{
+    text-decoration:line-through;
+}
+.list_wrap .list_item .item_right .item_right_bottom .old_price_count .count{
+
+}
+
+/* 6、即将开始--商品列表 */
+.list_next_wrap{
+    width: 100%;
+    height: 1200rpx;
+    /* background-color: pink; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+
+}
+.list_next_wrap.hidden{
+    display: none;
+}
+.list_next_wrap .list_none{
+    height: 100%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.list_next_wrap .list_none .none_top{
+    height: 40%;
+    width: 100%;
+    /* background-color: pink; */
+    /* padding-top: 100rpx; */
+    margin-top: 200rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list_next_wrap .list_none .none_top .top_imgs{
+    height: 60%;
+    width: 40%;
+    
+}
+.list_next_wrap .list_none .none_top .top_imgs image{
+    height: 100%;
+    width: 100%;
+border-radius: 50%;
+}
+.list_next_wrap .list_none .none_top .middle_txt{
+    font-size:35rpx;
+}
+.list_next_wrap .list_none .none_top .bottom_txt{
+    font-size: 25rpx;
+    color: #ccc;
+}
+.list_next_wrap .list_none .none_bottom{
+    height: 10%;
+    background-color: #ccc;
+    font-size: 50rpx;
+    font-weight: 800;
+    color: #A9A9A9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

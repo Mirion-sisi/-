@@ -1,0 +1,5 @@
+<!--pages/shop/shop.wxml-->
+<text class="title">shop页面</text>
+<now-sell title="哈哈哈"></now-sell>
+<now-sell titleclass="pink"></now-sell>
+<now-sell titleclass="blue"></now-sell>
